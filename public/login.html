@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .login-card {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: none;
+        }
+        .login-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px 20px 0 0;
+        }
+        .form-control {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        .btn-login {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .card {
+            animation: slideInUp 0.6s ease-out;
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center min-vh-100 align-items-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card login-card shadow-lg">
+                    <div class="card-header login-header text-white text-center py-4">
+                        <h3 class="mb-0 fw-bold">
+                            🔐 Connexion
+                        </h3>
+                    </div>
+                    <div class="card-body p-5">
+                        <form action="/login" method="POST">
+                            <div class="mb-4">
+                                <label for="login" class="form-label fw-semibold">Login</label>
+                                <input type="text" class="form-control form-control-lg" id="login" name="login" placeholder="Entrez votre login" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label fw-semibold">Mot de passe</label>
+                                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-login btn-lg">
+                                    🚀 Se connecter
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center bg-light py-3">
+                        <small class="text-muted">
+                            ℹ️ Identifiants de test : Alan / 4l4n
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

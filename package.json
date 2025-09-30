@@ -1,0 +1,29 @@
+{
+  "name": "connexion-challenge",
+  "version": "1.0.0",
+  "description": "App de connexion sécurisée avec Express + JWT (projet d'apprentissage)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "crypto-js": "^4.1.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "express",
+    "authentication", 
+    "jwt",
+    "login",
+    "nodejs"
+  ],
+  "author": "Développeur en formation",
+  "license": "MIT"
+}
